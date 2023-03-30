@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=1380&t=st=1680199179~exp=1680199779~hmac=b24483e1763da80b13a4948b15faff09e96cc95eb6198f984181f8f492a3f7f9",
+      "authorName": "Mr. Raju",
+      "blogTitle": "How to get your first job as a self-taught programmer",
+      "parsonProfile": "https://cdn-icons-png.flaticon.com/512/194/194935.png?w=826&t=st=1680199466~exp=1680200066~hmac=6d039552519932aa1ea227cff92f3b88dbb68844a806885f996140cc64f5ea21",
+      "readTime": 5,
+      "publishDate": "Mar 14 (4 Days ago)",
+      "tages": "#beginners #programming"
+    },
+    {
+      "id": 2,
+      "image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010127.jpg?w=1380&t=st=1680200063~exp=1680200663~hmac=9f721f126b02b1a3f2265702b2b450d4ae1bbdbf229cba577fc67030846c555e",
+      "authorName": "Mrs. Setara",
+      "blogTitle": "Real How to get your first job as a self-taught programmer Customer Reviews You Need to See",
+      "parsonProfile": "https://cdn-icons-png.flaticon.com/512/201/201634.png?w=826&t=st=1680200251~exp=1680200851~hmac=8b66d79169a90da4bbe6d8e4e9feade380ca06be55eba8c26f50dcbb9fdc72bb",
+      "readTime": 10,
+      "publishDate": "Mar 14 (4 Days ago)",
+      "tages": "#beginners #programming"
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?w=1380&t=st=1680200532~exp=1680201132~hmac=691c232d34d0fd889585aec0df508a917567565d5069490a317a387531008238",
+      "authorName": "Mina Mostofa",
+      "blogTitle": "Keys to Comparing and Buying How to get your first job as a self-taught programmers",
+      "parsonProfile": "https://cdn-icons-png.flaticon.com/512/146/146037.png?w=826&t=st=1680200552~exp=1680201152~hmac=0e5ce2ae42675f907c6708764ad460e0acbf2d05d24d00b6e93ff1fdad44fe19",
+      "readTime": 12,
+      "publishDate": "Mar 14 (4 Days ago)",
+      "tages": "#beginners #programming"
+    },
+    {
+      "id": 4,
+      "image": "https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?w=1380&t=st=1680200634~exp=1680201234~hmac=2aa41306e6bcd1aba40a8943df7d98008e329b76439033dab112f5f8e83aab52",
+      "authorName": "Mr. Munna",
+      "blogTitle": "Common Mistakes With How to get your first job as a self-taught programmer",
+      "parsonProfile": "https://cdn-icons-png.flaticon.com/512/194/194935.png?w=826&t=st=1680199466~exp=1680200066~hmac=6d039552519932aa1ea227cff92f3b88dbb68844a806885f996140cc64f5ea21",
+      "readTime": 15,
+      "publishDate": "Mar 14 (4 Days ago)",
+      "tages": "#beginners #programming"
+    }
+  ]
