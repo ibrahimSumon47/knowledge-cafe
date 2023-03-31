@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Post = (props) => {
   const {
@@ -10,9 +12,9 @@ const Post = (props) => {
     publishDate,
     tages,
   } = props.blog;
-  const markAsRead = () => {
-    console.log("working");
-  }
+  const markAsRead = (blog) => {
+    console.log(blog);
+  };
   return (
     <div>
       <img className="w-auto my-5" src={image} alt="" />
@@ -24,12 +26,14 @@ const Post = (props) => {
             <h5>{publishDate}</h5>
           </div>
         </div>
-        <h5 className="">{readTime} min read</h5>
+        <h5 className="">{readTime} min read <button onClick={() => markAsRead()}><FontAwesomeIcon icon={faBookmark} /></button></h5>
       </div>
       <h2 className="text-4xl font-bold my-5">{blogTitle}</h2>
       <p>{tages}</p>
       <div>
-        <button onClick={markAsRead} className="mt-5 underline">Mark as read</button>
+        <button onClick={() => markAsRead()} className="mt-5 underline">
+          Mark as read
+        </button>
       </div>
     </div>
   );
