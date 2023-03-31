@@ -10,6 +10,9 @@ const Post = (props) => {
     publishDate,
     tages,
   } = props.blog;
+  const markAsRead = () => {
+    console.log("working");
+  }
   return (
     <div>
       <img className="w-auto my-5" src={image} alt="" />
@@ -25,6 +28,9 @@ const Post = (props) => {
       </div>
       <h2 className="text-4xl font-bold my-5">{blogTitle}</h2>
       <p>{tages}</p>
+      <div>
+        <button onClick={markAsRead} className="mt-5 underline">Mark as read</button>
+      </div>
     </div>
   );
 };
