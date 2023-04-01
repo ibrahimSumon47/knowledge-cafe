@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import "./Post.css"
 
 const Post = (props) => {
   const {
@@ -14,11 +15,11 @@ const Post = (props) => {
   } = props.blog;
   
   const btnBookmark = props.btnBookmark;
-  
+  const spendTimeToRead = props.spendTimeToRead;
   return (
     
       <div>
-        <img className="w-auto my-5" src={image} alt="" />
+        <img className="w-auto my-5" id="post-coverimg" src={image} alt="" />
         <div className="flex justify-between">
           <div className="flex">
             <img className="h-14" src={parsonProfile} alt="" />
@@ -29,7 +30,7 @@ const Post = (props) => {
           </div>
           <h5 className="">
             {readTime} min read{" "}
-            <button onClick={() => btnBookmark(props.blog)}>
+            <button onClick={() => btnBookmark(props.blog.blogTitle)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </h5>
@@ -37,7 +38,7 @@ const Post = (props) => {
         <h2 className="text-4xl font-bold my-5">{blogTitle}</h2>
         <p>{tages}</p>
         <div>
-          <button className="mt-5 underline">Mark as read</button>
+          <button className="mt-5 underline" onClick={() => spendTimeToRead(readTime)}>Mark as read</button>
         </div>
       </div>
   );
