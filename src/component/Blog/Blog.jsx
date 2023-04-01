@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Post from "../Post/Post";
 import ReadTime from "../ReadTime/ReadTime";
+import Bookmarked from "../Bookmarked/Bookmarked";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
-  const [post, setPost] = useState([]);
+
   const [bookmarked, setBookmarked] = useState([]);
   useEffect(() => {
     fetch("data.json")
@@ -18,10 +19,7 @@ const Blog = () => {
     setTotalTime(prevTotalTime => prevTotalTime + readTime);
   }
 
-  // const btnBookmark = (blog) => {
-  //   const gotoBookmark = [...post, blog];
-  //   setPost(gotoBookmark);
-  // };
+
 
  
   return (
@@ -36,8 +34,8 @@ const Blog = () => {
           <ReadTime time = {totalTime}></ReadTime>
         </div>
         <div className="border rounded-lg p-5 bg-stone-200">
-        <h2 className="text-3xl font-bold">Bookmarked Blogs: {post.length}</h2>
-        <h2 className="border bg-slate-100 p-5 rounded-lg my-5 text-3xl font-bold">{bookmarked.map(bookmark => bookmark = {bookmark})}</h2>
+        <Bookmarked bookmarked={bookmarked}></Bookmarked>
+        <h2 className="border bg-slate-100 p-5 rounded-lg my-5 text-3xl font-bold">{}</h2>
         </div>
       </div>
     </div>
