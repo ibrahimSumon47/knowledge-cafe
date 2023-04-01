@@ -24,7 +24,7 @@ const Blog = () => {
  
   return (
     <div className="grid grid-cols-2 gap-4">
-      <div className="cols-span-2">
+      <div className="cols-span-3">
         {blogs.map((blog) => (
           <Post key={blog.id} blog={blog} btnBookmark={btnBookmark} spendTimeToRead = {spendTimeToRead}></Post>
         ))}
@@ -33,8 +33,10 @@ const Blog = () => {
         <div>
           <ReadTime time = {totalTime}></ReadTime>
         </div>
-        <h2>Bookmarked Blogs: {post.length}</h2>
-        <h2>${post}</h2>
+        <div className="border rounded-lg p-5 bg-stone-200">
+        <h2 className="text-3xl font-bold">Bookmarked Blogs: {post.length}</h2>
+        <h2 className="border bg-slate-100 p-5 rounded-lg my-5 text-3xl font-bold">${post}. </h2>
+        </div>
       </div>
     </div>
   );
