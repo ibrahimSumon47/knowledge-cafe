@@ -14,7 +14,7 @@ const Post = (props) => {
     tages,
   } = props.blog;
   
-  const btnBookmark = props.btnBookmark;
+  const addToBookmark = props.addToBookmark;
   const spendTimeToRead = props.spendTimeToRead;
   return (
     
@@ -30,7 +30,7 @@ const Post = (props) => {
           </div>
           <h5 className="text-stone-500 font-semibold">
             {readTime} min read{" "}
-            <button onClick={() => btnBookmark(props.blog.blogTitle)}>
+            <button onClick={() => addToBookmark(props.blog)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </h5>
